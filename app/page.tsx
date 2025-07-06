@@ -96,7 +96,7 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <Image
-                src="/images/coffee-brewing-process.jpg"
+                src="/images/bikin-kopi.jpg"
                 alt="Proses pembuatan kopi"
                 width={500}
                 height={600}

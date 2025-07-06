@@ -7,9 +7,9 @@ import { ArrowRight, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const heroImages = [
-  "/images/hero-1.jpg",
-  "/images/hero-2.jpg",
-  "/images/hero-3.jpg",
+  "/placeholder.jpeg",
+  "/placeholder.jpeg",
+  "/placeholder.jpeg",
 ]
 
 export default function HeroSection() {
@@ -24,7 +24,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Gambar Latar Belakang */}
+      {/* Background Images */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
           <div
@@ -35,29 +35,26 @@ export default function HeroSection() {
           >
             <Image
               src={image || "/placeholder.jpeg"}
-              alt={`Suasana coffee shop ${index + 1}`}
+              alt={`Coffee shop ambiance ${index + 1}`}
               fill
               className="object-cover"
               priority={index === 0}
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = "/placeholder.jpeg";
-              }}
             />
           </div>
         ))}
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Konten */}
+      {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <div className="animate-fade-in">
           <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Selamat Datang di
+            Welcome to
             <span className="block text-gradient">Aroma Coffee</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-stone-200 max-w-2xl mx-auto leading-relaxed">
-            Nikmati perpaduan sempurna kopi premium, suasana nyaman, dan layanan istimewa di jantung kota.
+            Experience the perfect blend of premium coffee, cozy atmosphere, and exceptional service in the heart of the
+            city.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
@@ -66,7 +63,7 @@ export default function HeroSection() {
               className="bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
             >
               <Link href="/menu" className="flex items-center space-x-2">
-                <span>Jelajahi Menu</span>
+                <span>Explore Menu</span>
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
@@ -78,21 +75,21 @@ export default function HeroSection() {
             >
               <Link href="/reservation" className="flex items-center space-x-2">
                 <Play className="h-5 w-5" />
-                <span>Buat Reservasi</span>
+                <span>Make Reservation</span>
               </Link>
             </Button>
           </div>
         </div>
       </div>
 
-      {/* Indikator Scroll */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse" />
         </div>
       </div>
 
-      {/* Indikator Gambar */}
+      {/* Image Indicators */}
       <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {heroImages.map((_, index) => (
           <button
