@@ -26,9 +26,9 @@ const values = [
 
 const team = [
   {
-    name: "Sarah Johnson",
+    name: "Sarah Barokah",
     role: "Head Barista & Co-Founder",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/sarah.png",
     bio: "Dengan pengalaman 10+ tahun di dunia kopi, Sarah membawa keahlian dan passion ke setiap cangkir.",
   },
   {
@@ -64,7 +64,7 @@ export default function AboutPage() {
             </p>
             <div className="flex items-center space-x-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-700">4+</div>
+                <div className="text-3xl font-bold text-amber-700">5+</div>
                 <div className="text-stone-600">Tahun Melayani</div>
               </div>
               <div className="text-center">
@@ -79,7 +79,7 @@ export default function AboutPage() {
           </div>
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=600&width=500"
+              src="/images/interior.jpg"
               alt="Interior coffee shop"
               width={500}
               height={600}
