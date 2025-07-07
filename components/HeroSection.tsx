@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button"
 
 const heroImages = [
   "/placeholder.jpeg",
-  "/placeholder.jpeg",
-  "/placeholder.jpeg",
+  "/images/interior.jpg",
+  "/images/pembuatan-kopi.jpg",
 ]
 
 export default function HeroSection() {
