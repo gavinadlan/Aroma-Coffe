@@ -28,7 +28,7 @@ const featuredMenuItems = [
     name: "Sandwich Croissant",
     description: "Croissant mentega dengan ham dan keju premium",
     price: "Rp 55,000",
-    image: "/images/croissant.jpg",
+    image: "/images/croissant-sandwich.jpg",
     category: "Makanan",
     rating: 4.6,
   },
@@ -39,7 +39,7 @@ const blogPosts = [
     title: "Seni Membuat Kopi: Panduan Lengkap",
     excerpt:
       "Temukan rahasia di balik pembuatan secangkir kopi sempurna, dari pemilihan biji hingga teknik ekstraksi.",
-    image: "/images/coffee-brewing.jpg",
+    image: "/images/seni-membuat-kopi.png",
     author: "Sarah Johnson",
     date: "15 Des 2024",
     slug: "art-of-coffee-brewing",
@@ -48,7 +48,7 @@ const blogPosts = [
   {
     title: "Kopi Berkelanjutan: Perjalanan Kami Menuju Sumber Etis",
     excerpt: "Pelajari tentang komitmen kami terhadap pertanian kopi berkelanjutan dan bagaimana kami mendukung komunitas lokal.",
-    image: "/images/sustainable-coffee.jpg",
+    image: "/images/kopi-berkelanjutan.jpg",
     author: "Michael Chen",
     date: "12 Des 2024",
     slug: "sustainable-coffee-journey",
@@ -246,13 +246,17 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-stone-200 rounded-2xl h-96 flex items-center justify-center">
-              <div className="text-center text-stone-600">
-                <MapPin className="h-12 w-12 mx-auto mb-4 text-amber-700" />
-                <p className="text-lg font-medium">Peta Interaktif</p>
-                <p className="text-sm">Integrasi Google Maps akan ditempatkan di sini</p>
-                <p className="text-xs mt-2">Jl. Kopi No. 123, Jakarta Pusat</p>
-              </div>
+            <div className="bg-stone-200 rounded-2xl h-96 overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.432123456789!2d106.8191234!3d-6.1961234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c123456789%3A0x123456789abcdef!2sGrand%20Indonesia!5e0!3m2!1sen!2sid!4v1710000000000!5m2!1sen!2sid"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Grand Indonesia Map"
+              ></iframe>
             </div>
           </div>
         </div>

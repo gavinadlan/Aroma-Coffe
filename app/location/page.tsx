@@ -113,13 +113,17 @@ export default function LocationPage() {
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <h2 className="font-playfair text-2xl font-bold text-stone-900 mb-6">Temukan Kami di Peta</h2>
 
-            <div className="bg-stone-200 rounded-xl h-96 flex items-center justify-center mb-6">
-              <div className="text-center text-stone-600">
-                <MapPin className="h-16 w-16 mx-auto mb-4 text-amber-700" />
-                <p className="text-xl font-medium mb-2">Peta Interaktif</p>
-                <p className="text-sm mb-2">Integrasi Google Maps akan ditempatkan di sini</p>
-                <p className="text-xs">Jl. Kopi No. 123, Jakarta Pusat 12345</p>
-              </div>
+            <div className="bg-stone-200 rounded-xl h-96 overflow-hidden mb-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.432123456789!2d106.8191234!3d-6.1961234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c123456789%3A0x123456789abcdef!2sGrand%20Indonesia!5e0!3m2!1sen!2sid!4v1710000000000!5m2!1sen!2sid"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Grand Indonesia Map"
+              ></iframe>
             </div>
 
             <div className="bg-stone-50 rounded-lg p-4">
