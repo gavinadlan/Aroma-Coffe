@@ -6,62 +6,62 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react"
 
 const galleryImages = [
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/interior.jpg",
     alt: "Interior coffee shop dengan tempat duduk yang nyaman",
     category: "Interior",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/pembuatan-kopi.jpg",
     alt: "Barista menyiapkan latte art",
     category: "Pembuatan Kopi",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/biji-kopi.jpg",
     alt: "Biji kopi segar",
     category: "Bahan Baku",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/display-pastry.jpg",
     alt: "Display pastry yang lezat",
     category: "Makanan",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/interior-outdoor.jpg",
     alt: "Area tempat duduk outdoor",
     category: "Interior",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/roasting-kopi.jpg",
     alt: "Proses roasting kopi",
     category: "Pembuatan Kopi",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/espresso.jpg",
     alt: "Minuman kopi spesial",
     category: "Minuman",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/sudut-membaca.jpeg",
     alt: "Sudut membaca yang nyaman",
     category: "Interior",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/pembuatan-sandwich.jpg",
     alt: "Persiapan sandwich segar",
     category: "Makanan",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/alatkopi.jpg",
     alt: "Peralatan dan alat kopi",
     category: "Pembuatan Kopi",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/images/interior-malam.jpeg",
     alt: "Suasana malam",
     category: "Interior",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "images/pembuatan-coldbrew.jpg",
     alt: "Persiapan cold brew",
     category: "Minuman",
   },
