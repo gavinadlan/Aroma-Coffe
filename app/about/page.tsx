@@ -32,15 +32,15 @@ const team = [
     bio: "Dengan pengalaman 10+ tahun di dunia kopi, Sarah membawa keahlian dan passion ke setiap cangkir.",
   },
   {
-    name: "Michael Chen",
+    name: "Agus Setiawan",
     role: "Coffee Roaster",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/agus.jpg",
     bio: "Keahlian roasting Michael memastikan setiap biji mencapai profil rasa yang sempurna.",
   },
   {
-    name: "Emma Rodriguez",
+    name: "Jessica Kumala Wongso",
     role: "Store Manager",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/jessica.jpg",
     bio: "Emma menciptakan suasana hangat dan ramah yang membuat Aroma terasa seperti rumah.",
   },
 ]
@@ -187,10 +187,10 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/favicon.svg"
                 alt="Biji kopi dan peralatan brewing"
-                width={600}
-                height={500}
+                width={400}
+                height={300}
                 className="rounded-2xl"
               />
             </div>

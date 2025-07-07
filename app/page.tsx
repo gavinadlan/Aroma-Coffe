@@ -49,7 +49,7 @@ const blogPosts = [
     title: "Kopi Berkelanjutan: Perjalanan Kami Menuju Sumber Etis",
     excerpt: "Pelajari tentang komitmen kami terhadap pertanian kopi berkelanjutan dan bagaimana kami mendukung komunitas lokal.",
     image: "/images/kopi-berkelanjutan.jpg",
-    author: "Michael Chen",
+    author: "Agus Setiawan",
     date: "12 Des 2024",
     slug: "sustainable-coffee-journey",
     category: "Keberlanjutan",
