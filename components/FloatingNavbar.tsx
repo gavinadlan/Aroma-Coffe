@@ -33,32 +33,31 @@ export default function FloatingNavbar() {
   return (
     <>
       <nav
-        className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 ${
+        className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 pointer-events-none ${
           isScrolled ? "scale-95" : "scale-100"
         }`}
       >
         <div
-          className={`relative flex items-center justify-between gap-6 rounded-full px-6 py-3 transition-all duration-300 glassmorphism ${
+          className={`relative flex items-center justify-between gap-4 rounded-full px-4 py-2 pl-20 transition-all duration-300 glassmorphism pointer-events-auto ${
             isScrolled ? "bg-white/20" : "bg-white/10"
           }`}
         >
-          {/* Logo besar, tidak memengaruhi navbar height */}
-          <Link href="/" className="absolute -left-16 -top-6">
+          {/* Logo di dalam bubble */}
+          <Link href="/" className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10">
             <Image
               src="/logo.svg"
               alt="Aroma Coffee Logo"
               width={0}
               height={0}
               priority
-              className="w-[90px] h-auto object-contain drop-shadow-md pointer-events-auto"
+              className={`h-auto object-contain drop-shadow-md transition-all duration-300 ${
+                isScrolled ? "w-[60px]" : "w-[70px]"
+              }`}
             />
           </Link>
 
-          {/* Spacer kosong untuk jaga layout */}
-          <div className="w-[50px] hidden lg:block" />
-
           {/* Menu Desktop */}
-          <div className="hidden lg:flex items-center space-x-8 ml-auto">
+          <div className="hidden lg:flex items-center space-x-6 ml-auto">
             {navItems.map((item) => (
               <Link
                 key={item.name}
