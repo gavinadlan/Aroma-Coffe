@@ -60,7 +60,7 @@ const menuItems = [
     name: "Croissant Sandwich",
     description: "Croissant mentega dengan ham dan keju premium",
     price: "Rp 55.000",
-    image: "/images/croissant-sandwich.jpg",
+    image: "/images/Croissant-Sandwich.jpg",
     category: "Makanan",
     rating: 4.6,
   },
